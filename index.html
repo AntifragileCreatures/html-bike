@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link rel="stylesheet" href="css-reset.css"> -->
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap&subset=cyrillic-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .container {
+      width: 600px;
+      background-color: lightslategray;
+      margin: 0 auto;
+      
+    }
+
+    html {
+      background-image: linear-gradient(
+        to bottom right,
+        #fc5e55,
+        rgba(240, 219, 227, 0.062)
+      );
+    }
+
+    body {
+      
+      background-image:
+      font-family: "Roboto", sans-serif;
+      box-sizing: border-box;
+    }
+
+    .cards {
+      background-color: rgb(55, 110, 165);
+      min-height: 150px;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      /* padding: 20px 20px; */
+      margin: 30px 0px;
+      flex-wrap: wrap;
+    }
+    .card1 {
+      /* background-color: rgb(231, 18, 149); */
+      min-height: 150px;
+      width: 30%;
+      background-image: url(images/image-background-card1.jpg);
+      background-size: cover;
+      background-position: bottom;
+    }
+    .card2 {
+      background-color: rgba(231, 18, 149, 0.507);
+      min-height: 150px;
+      width: 30%;
+    }
+    .card3 {
+      background-color: rgba(231, 18, 149, 0.247);
+      min-height: 150px;
+      width: 30%;
+    }
+    main {
+      background-color: rgb(71, 189, 60);
+      min-height: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .herobox1 {
+      background-color: rgba(231, 18, 149, 0.247);
+      min-height: 100px;
+      width: 60%;
+      padding: 0px 20px;
+    }
+
+    .herobox1 p:last-child {
+      font-weight: bold;
+    }
+
+    .herobox1 p:nth-of-type(even) {
+      color: pink;
+    }
+
+    .herobox1 p:nth-of-type(odd) {
+      font-style: italic;
+    }
+
+    .herobox2 {
+      background-color: rgba(231, 18, 142, 0.781);
+      min-height: 100px;
+      width: 30%;
+    }
+
+    header {
+      background-color: rgba(43, 231, 18, 0.822);
+      min-height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .logo {
+      color: ghostwhite;
+    }
+
+    .cards h2 {
+      color: white;
+      text-align: center;
+      margin: 12 0;
+    }
+
+    .cards p {
+      color: white;
+      text-align: center;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    .cards i {
+      font-size: 30px;
+      color: white;
+      padding-top: 10px;
+    }
+
+    .mybutton {
+      text-align: center;
+    }
+
+    .mybutton > a {
+      background-color: white;
+      color: #fa4083;
+      font-family: "Playfair Display", serif;
+      padding: 11px 25px;
+      border-radius: 2px;
+      box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.228);
+    }
+
+    .navbutton {
+      color: rgb(29, 2, 12);
+      font-family: "Playfair Display", serif;
+      border-bottom: 1px solid gray;
+      margin-left: 10px;
+      margin-right: 10px;
+      display: inline-block;
+      position: relative;
+    }
+
+    .navbutton:hover {
+      color: lightseagreen;
+    }
+
+    .dropdown {
+      display: none;
+      z-index: 1;
+      position: absolute;
+      top: 19px;
+    }
+
+    .dropdownitem {
+      background-color: lightblue;
+      padding: 7px 5px;
+    }
+
+    .dropdownitem:hover {
+      background-color: gray;
+    }
+
+    .dropdownitem a {
+      color: orangered;
+    }
+
+    .dropdownitem:hover a {
+      color: white;
+    }
+
+    .navbutton:hover .dropdown {
+      display: block;
+    }
+
+    .contact {
+    background-color: aquamarine;
+    margin: 40px 40px;
+    min-height: 600px;
+    }
+
+
+  </style>
+
+  <body>
+    <div class="container">
+      <header>
+        <div>
+          <a href="index2.html" class="logo">
+            <h2>Logo</h2>
+          </a>
+        </div>
+        <nav>
+          <div class="navbutton">
+            <a href="#">Book</a>
+            <div class="dropdown">
+              <div class="dropdownitem">
+                <a href="#">here</a>
+              </div>
+              <div class="dropdownitem">
+                <a href="#">there</a>
+              </div>
+              <div class="dropdownitem">
+                <a href="#">nowhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="navbutton">
+            <a href="#">About</a>
+          </div>
+          <div class="navbutton">
+            <a href="contact-us.html">Contact</a>
+          </div>
+        </nav>
+      </header>
+      <h1>hello world</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur
+        commodi ipsa soluta harum neque magnam expedita nobis culpa. Labore quo
+        cum ipsam dolores libero officia repellendus alias atque beatae
+        officiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Cupiditate a tenetur officia sunt maiores. Delectus eaque quam fuga at
+        nobis, similique esse earum corrupti quis! Eius facere nesciunt tenetur
+        porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+        quibusdam doloremque dolores maiores ducimus? Deleniti, nostrum
+        consectetur. Laudantium quia tempore totam quo iure. Numquam explicabo
+        sequi dolorum natus?
+      </p>
+
+      <div class="mybutton">
+        <a href="test-page.html">Book Online</a>
+      </div>
+
+      <div class="cards">
+        <div class="card1">
+          <a href="#">
+            <i class="fas fa-address-card"></i>
+            <h2>hello card</h2>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem, ipsum dolor.</p>
+          </a>
+        </div>
+        <div class="card2"></div>
+        <div class="card3"></div>
+        <div class="card3"></div>
+      </div>
+      <main>
+        <div class="herobox1">
+          <h1>Lorem ipsum</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
+            placeat ab ipsum explicabo quibusdam voluptates aliquam cum
+            perspiciatis voluptate debit.
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum.</p>
+        </div>
+        <div class="herobox2">
+          <h1>Lorem</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        </main>
+        <div class="contact">
+          <form action="">
+            <label for="name" class="newline" class="newline" >First Name</label>
+            <input type="text" name="name" id="name" placeholder="First Name">
+            <label for="email" class="newline">Email</label>
+            <input type="email" name="email" id="email" placeholder="dan@sample.com">
+
+            <input type="submit" value="Fire Away" class="mybutton">
+          </form>
+        </div>
+    </div>
+  </body>
+</html>
